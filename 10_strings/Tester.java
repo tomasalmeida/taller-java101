@@ -36,20 +36,13 @@ public class Tester {
     System.out.println("\"" + stringLimpia2.trim() + "\"");
 
     //////
-    String [] lista = stringDelCabron.split(" ");
-    stringDelCabron = "";
-
-    for (int i = 0 ; i <lista.length; i ++){
-        System.out.println("-" + lista[i] + "-");
-        if (lista[i].equals(" ")){
-            lista[i] = "";
-        } else{
-            lista[i] = lista[i] + " ";
-        }
-        System.out.println("+" + lista[i] + "+");
-        stringDelCabron = stringDelCabron.concat(lista[i]);
+    String limpia = "";
+    String[] lista3 = stringDelCabron.split("");
+    for(int i = 0; i < lista3.length - 1; i++) {
+      if (lista3[i+1].equals(" ") == false) {
+        limpia += lista3[i+1];
+      }
     }
-    stringDelCabron = stringDelCabron.trim();
-    System.out.println("\"" + stringDelCabron.trim() + "\"");
+    System.out.println("\"" + limpia + "\"");
   }
 }
