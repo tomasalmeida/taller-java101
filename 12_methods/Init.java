@@ -1,4 +1,5 @@
 public class Init {
+
   {
       System.out.println(text);
   }
@@ -20,6 +21,6 @@ public class Init {
   }
 
   static public void main(String[] args) {
-    Init a = new Init();
+    Init var1 = new Init();
   }
 }
