@@ -1,5 +1,7 @@
 package org.vigojug.optionals;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 import org.vigojug.optionals.models.Car;
@@ -49,6 +51,8 @@ public class Tester {
             //                }
             //            }
             // System.out.println(i + " - " + color);
+
+            List<Integer> list = new ArrayList();
 
             Thread.sleep(10);
         }
